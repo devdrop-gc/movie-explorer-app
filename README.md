@@ -1,16 +1,73 @@
-# React + Vite
+# 🎬 Movie Explorer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that allows users to explore movies, search by title, and view detailed information.  
+This project demonstrates the use of **React Router DOM**, **Axios**, and **Context API** for global theme handling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+[![View Live](https://img.shields.io/badge/View-Live-blue?style=for-the-badge&logo=github)](https://devdrop-gc.github.io/movie-explorer-app/)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🧠 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🏠 **Home Page** – Welcome screen with theme toggle  
+- 🎥 **Movies Page** – Browse movies fetched from [TVMaze API](https://api.tvmaze.com/shows)  
+- 🔍 **Search** – Filter movies by title in real-time  
+- 📄 **Movie Details Page** – View detailed info (language, rating, genres, summary)  
+- 🌗 **Theme Toggle** – Global light/dark mode using Context API  
+- ⚙️ **Routing** – Implemented with React Router DOM  
+- ⚡ **Data Fetching** – Done with Axios and useEffect  
+
+---
+
+## 🏗️ Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| ⚛️ React | UI Components |
+| ⚡ Vite | Fast React build tool |
+| 🌐 React Router DOM | Navigation & Routing |
+| 🧩 Context API | Global Theme Management |
+| 📡 Axios | API Calls |
+| 🎨 CSS | Styling |
+
+---
+
+## 📂 Folder Structure
+```
+movie-explorer/
+├── src/
+│ ├── App.jsx
+│ ├── App.css
+│ ├── main.jsx
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ ├── Movies.jsx
+│ │ └── MovieDetails.jsx
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ ├── MovieCard.jsx
+│ │ └── MovieList.jsx
+│ └── context/
+│ └── ThemeContext.jsx
+├── index.html
+├── vite.config.js
+├── package.json
+└── README.md
+```
+
+---
+
+### 🏁 Project Overview
+
+This project was built as part of a React assignment focusing on:
+
+- ⚛️ **React Router DOM**  
+- 🧠 **useState & useEffect**  
+- 📡 **Axios API fetching**  
+- 🔄 **Conditional Rendering**  
+- 🧩 **Props & Component Communication**  
+- 🌗 **Context API** for global state (theme)
